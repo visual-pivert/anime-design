@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js "></script>
+    <link rel="stylesheet" href="lib/css/style.css">
+
+    <title>DiscoverAnime - About</title>
+</head>
+
+<body>
+    <header>
+        <h1>DiscoverAnime</h1>
+    </header>
+    <main>
+        <div>
+            <div class="detail__container">
+                <div class="detail">
+                    <div class="detail__image"><img src="./lib/img/naruto.jpg" alt=""></div>
+                    <div class="detail__title">
+                        <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                    </div>
+                    <div class="detail__description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem dolore dolores earum
+                            quas
+                            sit? Iure, dolore, temporibus, doloremque id ab eligendi aliquid quae ullam corrupti debitis
+                            inventore eius laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                            ipsa
+                            sed accusantium nulla praesentium, doloremque sequi quia ab voluptates optio quos laboriosam
+                            neque quis, at, rem iure porro veritatis asperiores.lorem Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Voluptatem soluta officiis, expedita saepe ab quaerat, facere
+                            ea
+                            magnam, necessitatibus provident praesentium deleniti fuga suscipit. Suscipit inventore
+                            illum
+                            cupiditate at odit.</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <ul>
+                        <li>
+                            <div class="comment">
+                                <div class="comment__pseudoDetail">
+                                    <span>pseudo</span>
+                                    <span>10-25-2023</span>
+                                    <span>(Like)</span>
+                                </div>
+                                <div class="comment__value">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut, porro delectus dolor quod doloribus. Quisquam libero voluptatum cupiditate? Excepturi quidem nostrum amet mollitia saepe ad accusamus suscipit itaque alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos fugit vero excepturi consequuntur ab, maxime, explicabo aperiam dicta magnam et! Consequatur temporibus in reiciendis soluta, porro sed minus tempore.
+                                        Numquam deserunt alias laudantium neque cum, deleniti ipsa quod doloremque ad natus facere, delectus laboriosam debitis voluptatibus praesentium reiciendis. Amet quisquam impedit laborum, obcaecati sunt tempora animi et velit ducimus.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment">
+                                <div class="comment__pseudoDetail">
+                                    <span>pseudo</span>
+                                    <span>10-25-2023</span>
+                                    <span>(Like)</span>
+                                </div>
+                                <div class="comment__value">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut, porro delectus dolor quod doloribus. Quisquam libero voluptatum cupiditate? Excepturi quidem nostrum amet mollitia saepe ad accusamus suscipit itaque alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos fugit vero excepturi consequuntur ab, maxime, explicabo aperiam dicta magnam et! Consequatur temporibus in reiciendis soluta, porro sed minus tempore.
+                                        Numquam deserunt alias laudantium neque cum, deleniti ipsa quod doloremque ad natus facere, delectus laboriosam debitis voluptatibus praesentium reiciendis. Amet quisquam impedit laborum, obcaecati sunt tempora animi et velit ducimus.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="field">
+                    <form action="" method="post">
+                        <div class="field__pseudo">
+                            <label for="pseudo">pseudo</label>
+                            <input name="pseudo" id="pseudo" type="text">
+                        </div>
+                        <div class="field__comment">
+                            <label for="comment">comment</label>
+                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="field__like">
+                            <div class="checkbox__button">
+                                <label for="like">Like</label>
+                                <input name="like" id="like" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="field__submit">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const label = document.querySelector('.checkbox__button > label')
+        label.addEventListener('click', function (e) {
+            this.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>

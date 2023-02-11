@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(38, 131, 69);
+    padding: 0.1em;
+    padding-left: 1em;
+}
+
+header > h1 {
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(73, 73, 73);
+    overflow-y: auto;
+}
+
+main > div {
+    padding: 2em;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__card {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card {
+    max-width: 350px;
+    background-color: rgb(139, 139, 139);
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.card__image {
+}
+.card__image > img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card__detail {
+    padding: 1em;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card__title {
+}
+
+.card__title > h2 {
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.card__date {
+    font-size: 13px;
+}
+.card__like {
+    font-size: 13px;
+}
+.card__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5em
+}
+
+.card__description > p {
+    word-break: break-all;
+}
+
+.detail__container {
+    max-width: 811px;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom: solid 2px rgb(92, 92, 92);
+    padding-bottom: 2em;
+}
+.detail__image {
+    align-self: center;
+    width: 100%;
+}
+.detail__image > img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.field {
+    margin-top: 0.5em;
+}
+
+.field > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.field label {
+    margin-bottom: 0.5em;
+}
+
+.field label, .field input {
+    display: block;
+}
+.field input, .field textarea {
+    padding: 1em;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.219);
+    color: white
+}
+
+.field textarea {
+    max-height: 194px;
+    min-height: 194px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.comments {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid 2px rgb(92, 92, 92);
+}
+
+.comment {
+    border: solid 2px rgb(92, 92, 92);
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.comment__pseudoDetail {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+.comment__value {
+    padding-left: 1em;
+    border-left: solid 2px rgb(92, 92, 92);;
+}
+
+.checkbox__button {
+}
+
+.checkbox__button > label {
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 8px;
+}
+
+.checkbox__button > label.active {
+    background:rgb(38, 131, 69);
+}
+
+.checkbox__button > input {
+    display: none
+}
+
+
+
+
